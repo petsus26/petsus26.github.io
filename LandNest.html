@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GA4 & GTM Test Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Tag Manager will go here later -->
+  <!-- DO NOT add GA4 yet -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GA4 & Google Tag Manager Test Website</h1>
+
+  <p>
+    This is a simple test site for learning Google Analytics 4 and Google Tag Manager.
+  </p>
+
+  <button id="cta-button">
+    Click Me (Test Event)
+  </button>
+
+  <form id="test-form">
+    <h2>Test Form</h2>
+    <input type="text" placeholder="Your name" required />
+    <input type="email" placeholder="Your email" required />
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <script>
+    // Prevent form reload (important for tracking)
+    document.getElementById('test-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Form submitted (test)');
+    });
+  </script>
+
+</body>
+</html>
